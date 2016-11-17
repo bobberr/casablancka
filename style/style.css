@@ -96,9 +96,9 @@
   height: 2px;
   background-color: #000000;
   position: absolute;
-  margin: 0;
-  left: 50%;
-  margin-left: -1.45em;
+  left: 0;
+  right: 0;
+  margin: auto;
   bottom: -55px;
 }
 
@@ -275,7 +275,13 @@
 }
 
 .clients-block__link {
+  opacity: .2;
   margin-right: 95px;
+  transition: opacity .3s;
+}
+
+.clients-block__link:hover {
+  opacity: 1;
 }
 
 .clients-block__link:last-of-type {
@@ -286,10 +292,130 @@
   margin-bottom: 130px;
 }
 
+.about-us-block {
+  font-size: 0;
+}
+
 .about-us-block__text {
   text-align: center;
   font-size: 22px;
   line-height: 36px;
   font-family: amblelight;
   margin-top: 125px;
+}
+
+.about-us-block__person {
+  display: inline-block;
+  width: 268px;
+  height: 360px;
+  background-color: #e9e9e9;
+  transition: background-color .3s;
+  margin-right: 30px;
+}
+
+.about-us-block__person:hover {
+  background-color: #000000;
+}
+
+.about-us-block__person:hover .about-us-block__name, .about-us-block__person:hover .about-us-block__post, .about-us-block__person:hover .about-us-block__icon {
+  visibility: visible;
+}
+
+.about-us-block__hire {
+  border: 1px solid #000000;
+  background-color: #FFF;
+  margin-right: 0;
+  position: relative;
+}
+
+.about-us-block__hire:hover {
+  background-color: #e9e9e9;
+}
+
+.about-us-block__hiring {
+  position: absolute;
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  width: 130px;
+  top: 26.11%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.about-us-block__hiring:after {
+  bottom: -35px;
+}
+
+.about-us-block__button {
+  display: block;
+  width: 183px;
+  height: 60px;
+  position: absolute;
+  color: #000000;
+  border: 3px solid #000000;
+  top: 66.94%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.about-us-block__content-block {
+  width: 268px;
+  height: 100%;
+  position: relative;
+  opacity: 0.4;
+  background-image: url("../img/1st-person.jpeg");
+}
+
+.about-us-block__content-block:hover {
+  opacity: .48;
+}
+
+.about-us-block__icon {
+  position: absolute;
+  top: 4.44%;
+  right: 6.66%;
+  visibility: hidden;
+}
+
+.about-us-block__name {
+  position: absolute;
+  color: #ffffff;
+  opacity: 1;
+  font-family: big_johnregular;
+  font-size: 24px;
+  line-height: 36px;
+  top: 76%;
+  width: 130px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  visibility: hidden;
+}
+
+.about-us-block__post {
+  position: absolute;
+  color: white;
+  font-family: amblebold;
+  font-size: 18px;
+  line-height: 36px;
+  left: 0;
+  right: 0;
+  width: 200px;
+  top: 86.11%;
+  margin: auto;
+  text-align: center;
+  visibility: hidden;
+}
+
+.about-us-block__person:nth-of-type(2) .about-us-block__content-block {
+  background-image: url("../img/2nd-person.jpeg");
+}
+
+.about-us-block__person:nth-of-type(3) .about-us-block__content-block {
+  background-image: url("../img/3rd-person.jpeg");
 }

@@ -91,9 +91,9 @@
 		height: 2px;
 		background-color: #000000;
 		position: absolute;
-		margin: 0;
-		left: 50%;
-		margin-left: -1.45em;
+		left: 0;
+		right: 0;
+		margin: auto;
 		bottom: -55px;
 	}
 }
@@ -248,7 +248,12 @@
 		margin-bottom: 160px;
 	}
 	&__link {
+		opacity: .2;
 		margin-right: 95px;
+		transition: opacity .3s;
+		&:hover {
+			opacity: 1;
+		}
 		&:last-of-type {
 			margin-right: 0;
 		}
@@ -258,11 +263,117 @@
 	}
 }
 .about-us-block {
+	font-size: 0;
 	&__text {
 		text-align: center;
 		font-size: 22px;
 		line-height: 36px;
 		font-family: amblelight;
 		margin-top: 125px;
+	}
+	&__person {
+		display: inline-block;
+		width: 268px;
+		height: 360px;
+		background-color: #e9e9e9;
+		transition: background-color .3s;
+		margin-right: 30px;
+		&:hover {
+			background-color: #000000;
+		}
+		&:hover .about-us-block__name, &:hover .about-us-block__post, &:hover .about-us-block__icon {
+			visibility: visible;
+		}
+	}
+	&__hire {
+		border: 1px solid #000000;
+		background-color: #FFF;
+		margin-right: 0;
+		position: relative;
+		&:hover {
+			background-color: #e9e9e9;
+		}
+	}
+	&__hiring {
+		position: absolute;
+		margin: 0;
+		font-size: 24px;
+		line-height: 36px;
+		width: 130px;
+		top: 26.11%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		&:after {
+			bottom: -35px;
+		}
+	}
+	&__button {
+		display: block;
+		width: 183px;
+		height: 60px;
+		position: absolute;
+		color: #000000;
+		border: 3px solid #000000;
+		top: 66.94%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	&__content-block {
+		width: 268px;
+		height: 100%;
+		position: relative;
+		opacity: 0.4;
+		background-image: url('../img/1st-person.jpeg');
+		&:hover {
+			opacity: .48;
+		}
+	}
+	&__icon {
+		position: absolute;
+		top: 4.44%;
+		right: 6.66%;
+		visibility: hidden;
+	}
+	&__name {
+		position: absolute;
+		color: #ffffff;
+		opacity: 1;
+		font-family: big_johnregular;
+		font-size: 24px;
+		line-height: 36px;
+		top: 76%;
+		width: 130px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		visibility: hidden;
+		}
+	&__post {
+		position: absolute;
+		color: rgba(255, 255, 255, 1);
+		font-family: amblebold;
+		font-size: 18px;
+		line-height: 36px;
+		left: 0;
+		right: 0;
+		width: 200px;
+		top: 86.11%;
+		margin: auto;
+		text-align: center;
+		visibility: hidden;
+	}
+}
+.about-us-block__person:nth-of-type(2) {
+	.about-us-block__content-block {
+		background-image: url('../img/2nd-person.jpeg');
+	}
+}
+.about-us-block__person:nth-of-type(3) {
+	.about-us-block__content-block {
+		background-image: url('../img/3rd-person.jpeg');
 	}
 }
