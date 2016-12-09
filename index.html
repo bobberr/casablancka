@@ -18,7 +18,7 @@
 			<nav class="navbar navbar-default">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="toggle-button">
 			        <span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
@@ -28,12 +28,12 @@
 
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
-			        <li><a href="#">Introduction</a></li>
-			        <li><a href="#">Works</a></li>
-			        <li><a href="#">Clients</a></li>
-			        <li><a href="#">About us</a></li>
-			        <li><a href="#">Choice</a></li>
-			        <li><a href="#">Contacts</a></li>
+			        <li><a href="#introduction">Introduction</a></li>
+			        <li><a href="#works">Works</a></li>
+			        <li><a href="#clients">Clients</a></li>
+			        <li><a href="#about-us">About us</a></li>
+			        <li><a href="#choice">Choice</a></li>
+			        <li><a href="#contacts">Contacts</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 			</nav>
@@ -41,7 +41,7 @@
 			<div class="container">
 				<h2 class="intro-container__title">We've got the talent</h2>
 				<div class="row">
-					<p class="intro-container__text col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+					<p class="intro-container__text col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10" id="intro-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 					Aenean commodo ligula eget dolor. Aenean massa.</p>
 				</div>
 			</div>
@@ -49,7 +49,7 @@
 		</div>
 			<div class="introduction-block">
 				<div class="container">
-					<h3 class="introduction-block__title titles">Introduction</h3>
+					<h3 class="introduction-block__title titles" id="introduction">Introduction</h3>
 					<div class="row">
 						<p class="introduction-block__text texts
 						col-lg-offset-2 col-lg-8
@@ -70,7 +70,7 @@
 		</div>
 		<div class="works-block">
 			<div class="container">
-				<h3 class="works-block__title titles">Some of our work</h3>
+				<h3 class="works-block__title titles" id="works">Some of our work</h3>
 				<div class="row">
 					<div class="button-container
 					col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8
@@ -99,13 +99,13 @@
 					<button class="helping-block__button buttons col-lg-offset-3 col-lg-6
 					col-md-offset-3 col-md-6
 					col-sm-offset-3 col-sm-6
-					col-xs-offset-3 col-xs-6">We're here to help.</button>
+					col-xs-offset-2 col-xs-8">We're here to help.</button>
 				</div>
 			</div>
 		</div>
 		<div class="clients-block">
 			<div class="container">
-				<h3 class="clients-block__title titles">Our clients</h3>
+				<h3 class="clients-block__title titles" id="clients">Our clients</h3>
 				<a href="#" class="clients-block__link"><img src="img/google.png" alt="google"></a>
 				<a href="#" class="clients-block__link"><img src="img/samsung.png" alt="samsung"></a>
 				<a href="#" class="clients-block__link"><img src="img/flickr.png" alt="flickr"></a>
@@ -115,42 +115,43 @@
 		</div>
 		<div class="about-us-block">
 			<div class="container">
-				<div class="about-us-block__title titles">About us</div>
+				<div class="about-us-block__title titles" id="about-us">About us</div>
 				<div class="row">
 					<p class="about-us-block__text texts col-lg-offset-2 col-lg-8
 					col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
 					</p>
 				</div>
-				<a href="#" class="about-us-block__person">
-						<img class="about-us-block__face" src="img/1st-person.jpeg">
-						<img src="img/link-icon.png" alt="link" class="about-us-block__icon">
-						<p class="about-us-block__name">John</p>
-						<p class="about-us-block__post">CEO/Founder</p>
-				</a>
-
-				<a href="#" class="about-us-block__person">
-						<img class="about-us-block__face" src="img/2nd-person.jpeg">
-						<img src="img/link-icon.png" alt="link" class="about-us-block__icon">
-						<p class="about-us-block__name">Kate</p>
-						<p class="about-us-block__post">Account Manager</p>
-				</a>
-				<a href="#" class="about-us-block__person">
-						<img class="about-us-block__face" src="img/3rd-person.jpeg">
-						<img src="img/link-icon.png" alt="link" class="about-us-block__icon">
-						<p class="about-us-block__name">Sara</p>
-						<p class="about-us-block__post">HR/Director</p>
-				</a>
-				<div class="about-us-block__person about-us-block__hire">
-					<p class="about-us-block__hiring titles">We are hiring</p>
-					<a href="#" class="about-us-block__button">Apply</a>
+				<div class="about-us-block__person-container">
+					<a href="#" class="about-us-block__person">
+							<img class="about-us-block__face" src="img/1st-person.jpeg">
+							<img src="img/link-icon.png" alt="link" class="about-us-block__icon">
+							<p class="about-us-block__name">John</p>
+							<p class="about-us-block__post">CEO/Founder</p>
+					</a>
+					<a href="#" class="about-us-block__person">
+							<img class="about-us-block__face" src="img/2nd-person.jpeg">
+							<img src="img/link-icon.png" alt="link" class="about-us-block__icon">
+							<p class="about-us-block__name">Kate</p>
+							<p class="about-us-block__post">Account Manager</p>
+					</a>
+					<a href="#" class="about-us-block__person">
+							<img class="about-us-block__face" src="img/3rd-person.jpeg">
+							<img src="img/link-icon.png" alt="link" class="about-us-block__icon">
+							<p class="about-us-block__name">Sara</p>
+							<p class="about-us-block__post">HR/Director</p>
+					</a>
+					<div class="about-us-block__person about-us-block__hire">
+						<p class="about-us-block__hiring titles">We are hiring</p>
+						<a href="#" class="about-us-block__button">Apply</a>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="video-block"></div>
 		<div class="fatures-block">
 			<div class="container">
-				<h3 class="features-block__title titles">Why choose us</h3>
+				<h3 class="features-block__title titles" id="choice">Why choose us</h3>
 				<div class="row">
 					<p class="features-block__text texts col-lg-offset-2 col-lg-8
 					col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
@@ -177,19 +178,19 @@
 						</div>
 					</div>
 					<div class="slide">
-						<div class="slide__cell col-lg-4 col-md-4">
+						<div class="slide__cell col-lg-4 col-md-4 col-sm-4">
 							<img class="slide__image" src="img/iphone.png"></img>
 							<h4 class="slide__title">App Design</h4>
 							<p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 							ilabore et dolore.</p>
 						</div>
-						<div class="slide__cell col-lg-4 col-md-4">
+						<div class="slide__cell col-lg-4 col-md-4 col-sm-4">
 							<img class="slide__image" src="img/ipad.png"></img>
 							<h4 class="slide__title">Responsive Layout</h4>
 							<p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 							ilabore et dolore.</p>
 						</div>
-						<div class="slide__cell col-lg-4 col-md-4">
+						<div class="slide__cell col-lg-4 col-md-4 col-sm-4">
 							<img class="slide__image" src="img/mackbook.png"></img>
 							<h4 class="slide__title">Pixel Perfect Design</h4>
 							<p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -204,12 +205,12 @@
 				<button class="quote-bg-block__button buttons col-lg-offset-3 col-lg-6
 				col-md-offset-3 col-md-6
 				col-sm-offset-3 col-sm-6
-				col-xs-offset-3 col-xs-6">Get a quote now.</button>
+				col-xs-offset-2 col-xs-8">Get a quote now.</button>
 			</div>
 		</div>
 		<div class="touch-block">
 			<div class="container">
-				<div class="touch-block__title titles">About us</div>
+				<div class="touch-block__title titles" id="contacts">Get in touch</div>
 				<div class="row">
 					<p class="touch-block__text texts col-lg-offset-2 col-lg-8
 					col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
@@ -218,7 +219,7 @@
 				</div>
 			</div>
 			<div class="touch-block__address">
-				<h3 class="touch-block__title">Our location</h3>
+				<h3 class="touch-block__address-title">Our location</h3>
 				<p class="touch-block__location">174 Mimosa ST. NW<br>
 				Casablanca, MA 20370<br>
 				(212)1234567<br>
@@ -241,10 +242,10 @@
 		<footer class="main-footer">
 			<div class="container">
 				<div class="row">
-					<img class="main-footer__logo col-lg-offset-4 col-lg-4" alt="logo" src="img/logo.png"></img>
+					<img class="main-footer__logo col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6" alt="logo" src="img/logo.png"></img>
 				</div>
 				<div class="row">
-					<p class="main-footer__text col-lg-offset-4 col-lg-4">2014 © <a href="https://github.com/bobberr" class="main-footer__name">Pavel Yakovenko.</a> All Rights Reserved.</p>
+					<p class="main-footer__text col-lg-offset-4 col-lg-4 ">2014 © <a href="https://github.com/bobberr" class="main-footer__name" target="_blank">Pavel Yakovenko.</a> All Rights Reserved.</p>
 				</div>
 			</div>
 		</footer>
@@ -253,4 +254,5 @@
 	<script src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="js/js.js"></script>
+	<script src="js/js-button.js"></script>
 </html>
