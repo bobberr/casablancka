@@ -11,6 +11,7 @@
 	    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="style/hover.css">
 		<link rel="stylesheet" href="style/animate.css">
 	</head>
 	<body>
@@ -46,7 +47,7 @@
 					Aenean commodo ligula eget dolor. Aenean massa.</p>
 				</div>
 			</div>
-			<img src="img/mouse-icon.png" width="30px" height="48px" class="intro-container__mouse-icon">
+			<img src="img/mouse-icon.png" width="30px" height="48px" class="intro-container__mouse-icon wow flash" data-wow-iteration="1000" data-wow-duration="2.5s">
 		</div>
 			<div class="introduction-block">
 				<div class="container">
@@ -71,27 +72,27 @@
 		</div>
 		<div class="works-block">
 			<div class="container">
-				<h3 class="works-block__title titles wow bounceInDown" data-wow-offset="200" id="works">Some of our work</h3>
-				<div class="row">
-					<div class="button-container
+				<h3 class="works-block__title titles wow bounceInDown" data-wow-offset="200">Some of our work</h3>
+				<div class="row" id="options">
+					<div id="filters" class="button-container
 					col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8
 					col-sm-offset-1 col-sm-10 wow bounceInDown" data-wow-offset="200">
-						<button class="button-container__button_active">All</button>
-						<button class="button-container__button">Branding</button>
-						<button class="button-container__button">Web design</button>
-						<button class="button-container__button">Mobile UI</button>
-						<button class="button-container__button">Illustrations</button>
+						<button class="button-container__button is-checked" data-filter="*">All</button>
+						<button class="button-container__button" data-filter=".branding">Branding</button>
+						<button class="button-container__button" data-filter=".design">Web design</button>
+						<button class="button-container__button" data-filter=".ui">Mobile UI</button>
+						<button class="button-container__button" data-filter=".illustration">Illustrations</button>
 					</div>
 				</div>
 				<div class="item-container">
-					<a href="#" class="item-container__item wow fadeIn"><img src="img/first-item.jpeg" alt="perfect pancakes"></a>
-					<a href="#" class="item-container__item wow fadeIn" data-wow-delay="0.2s"><img src="img/second-item.jpeg" alt="ocean blur"></a>
-					<a href="#" class="item-container__item wow fadeIn" data-wow-delay="0.4s"><img src="img/third-item.jpeg" alt="google store"></a>
-					<a href="#" class="item-container__item wow fadeIn"><img src="img/fourth-item.jpeg" alt="portico"></a>
-					<a href="#" class="item-container__item wow fadeIn" data-wow-delay="0.2s"><img src="img/fifth-item.jpeg" alt="smash"></a>
-					<a href="#" class="item-container__item wow fadeIn" data-wow-delay="0.4s"><img src="img/sixth-item.jpeg" alt="salt"></a>
-					<button class="item-container__button wow rotateIn" data-wow-offset="200">Show me more</button>
+					<a href="#" class="item-container__item wow fadeIn hvr-float-shadow illustration"><img src="img/first-item.jpeg" alt="perfect pancakes"><div class="item-container__item-hover"><h3 class="item-container__item-hover-title">Web Recipes</h3><p class="item-container__item-hover-text">Cooking book</p></div></a>
+					<a href="#" class="item-container__item wow fadeIn hvr-float-shadow illustration" data-wow-delay="0.2s" ><img src="img/second-item.jpeg" alt="ocean blur"><div class="item-container__item-hover"><h3 class="item-container__item-hover-title">Cool pictures</h3><p class="item-container__item-hover-text">Artistic gallery</p></div></a>
+					<a href="#" class="item-container__item wow fadeIn hvr-float-shadow ui" data-wow-delay="0.4s" ><img src="img/third-item.jpeg" alt="google store"><div class="item-container__item-hover"><h3 class="item-container__item-hover-title">Mobile UI</h3><p class="item-container__item-hover-text">Google Mail</p></div></a>
+					<a href="#" class="item-container__item wow fadeIn hvr-float-shadow branding design" ><img src="img/fourth-item.jpeg" alt="portico"><div class="item-container__item-hover"><h3 class="item-container__item-hover-title">Beautiful websites</h3><p class="item-container__item-hover-text">Portico</p></div></a>
+					<a href="#" class="item-container__item wow fadeIn hvr-float-shadow branding illustration" data-wow-delay="0.2s" ><img src="img/fifth-item.jpeg" alt="smash"><div class="item-container__item-hover"><h3 class="item-container__item-hover-title">Creative images</h3><p class="item-container__item-hover-text">Smash studio</p></div></a>
+					<a href="#" class="item-container__item wow fadeIn hvr-float-shadow branding design" data-wow-delay="0.4s" ><img src="img/sixth-item.jpeg" alt="salt"><div class="item-container__item-hover"><h3 class="item-container__item-hover-title">Progressive projects</h3><p class="item-container__item-hover-text">Salt design</p></div></a>
 				</div>
+				<button class="item-container__button wow rotateIn">Show me more</button>
 			</div>
 		</div>
 		<div class="helping-block">
@@ -107,11 +108,11 @@
 		<div class="clients-block">
 			<div class="container">
 				<h3 class="clients-block__title titles wow flipInX" id="clients" data-wow-offset="200">Our clients</h3>
-				<a href="#" class="clients-block__link wow rotateIn" data-wow-delay="0.1s"><img src="img/google.png" alt="google"></a>
-				<a href="#" class="clients-block__link wow rotateIn" data-wow-delay="0.2s"><img src="img/samsung.png" alt="samsung"></a>
-				<a href="#" class="clients-block__link wow rotateIn" data-wow-delay="0.3s"><img src="img/flickr.png" alt="flickr"></a>
-				<a href="#" class="clients-block__link wow rotateIn" data-wow-delay="0.4s"><img src="img/four.png" alt="four"></a>
-				<a href="#" class="clients-block__link wow rotateIn" data-wow-delay="0.5s"><img src="img/pinters.png" alt="pinterest"></a>
+				<a href="https://www.google.com" class="clients-block__link" target="_blank"><img src="img/google.png" alt="google" class="wow rotateIn" data-wow-delay="0.1s"></a>
+				<a href="http://www.samsung.com" class="clients-block__link" target="_blank"><img src="img/samsung.png" alt="samsung" class="wow rotateIn" data-wow-delay="0.2s"></a>
+				<a href="https://www.flickr.com" class="clients-block__link" target="_blank"><img src="img/flickr.png" alt="flickr" class="wow rotateIn" data-wow-delay="0.3s"></a>
+				<a href="https://www.foursquare.com" class="clients-block__link" target="_blank"><img src="img/four.png" alt="four" class="wow rotateIn" data-wow-delay="0.4s"></a>
+				<a href="https://pinterest.com" class="clients-block__link" target="_blank"><img src="img/pinters.png" alt="pinterest" class="wow rotateIn" data-wow-delay="0.5s"></a>
 			</div>
 		</div>
 		<div class="about-us-block">
@@ -124,25 +125,25 @@
 					</p>
 				</div>
 				<div class="about-us-block__person-container">
-					<a href="#" class="about-us-block__person wow bounceIn">
+					<a href="#" class="about-us-block__person wow bounceIn" data-wow-offset="200">
 							<img class="about-us-block__face" src="img/1st-person.jpeg">
 							<img src="img/link-icon.png" alt="link" class="about-us-block__icon">
 							<p class="about-us-block__name">John</p>
 							<p class="about-us-block__post">CEO/Founder</p>
 					</a>
-					<a href="#" class="about-us-block__person wow bounceIn" data-wow-delay="0.2s">
+					<a href="#" class="about-us-block__person wow bounceIn" data-wow-delay="0.2s" data-wow-offset="200">
 							<img class="about-us-block__face" src="img/2nd-person.jpeg">
 							<img src="img/link-icon.png" alt="link" class="about-us-block__icon">
 							<p class="about-us-block__name">Kate</p>
 							<p class="about-us-block__post">Account Manager</p>
 					</a>
-					<a href="#" class="about-us-block__person wow bounceIn" data-wow-delay="0.4s">
+					<a href="#" class="about-us-block__person wow bounceIn" data-wow-delay="0.4s" data-wow-offset="200">
 							<img class="about-us-block__face" src="img/3rd-person.jpeg">
 							<img src="img/link-icon.png" alt="link" class="about-us-block__icon">
 							<p class="about-us-block__name">Sara</p>
 							<p class="about-us-block__post">HR/Director</p>
 					</a>
-					<div class="about-us-block__person about-us-block__hire wow bounceIn" data-wow-delay="0.6s">
+					<div class="about-us-block__person about-us-block__hire wow bounceIn" data-wow-delay="0.6s" data-wow-offset="200">
 						<p class="about-us-block__hiring titles">We are hiring</p>
 						<a href="#" class="about-us-block__button">Apply</a>
 					</div>
@@ -226,11 +227,11 @@
 				(212)1234567<br>
 				Pavel Yakovenko</p>
 				<div class="touch-block__link-container">
-					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="1.2s"><img src="img/twitter.png" alt=""></a>
-					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="1s"><img src="img/facebook.png" alt=""></a>
-					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="0.8s"><img src="img/linked.png" alt=""></a>
-					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="0.6s"><img src="img/v.png" alt=""></a>
-					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="0.4s"><img src="img/be.png" alt=""></a>
+					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="1.2s"><img src="img/twitter.png" alt="twitter"></a>
+					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="1s"><img src="img/facebook.png" alt="facebook"></a>
+					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="0.8s"><img src="img/linked.png" alt="linked"></a>
+					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="0.6s"><img src="img/v.png" alt="V"></a>
+					<a href="#" class="touch-block__link wow fadeInLeft" data-wow-delay="0.4s"><img src="img/be.png" alt="be"></a>
 				</div>
 			</div><!-- inline-block fix
 		 --><form class="touch-block__form">
@@ -252,10 +253,12 @@
 		</footer>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="js/js.js"></script>
 	<script src="js/js-button.js"></script>
+	<script src="js/isotope.js"></script>
 	<script type="text/javascript" src="js/smooth_scrolling.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script>new WOW().init();</script>
